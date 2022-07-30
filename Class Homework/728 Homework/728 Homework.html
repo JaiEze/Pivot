@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
-<!--Techinally this is missing meta tags as well, unsure if you wanted those or not-->
+
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
     <!--Changed the title and closed the Title Bracket-->
     <style>
@@ -10,9 +13,10 @@
         }
 
         .class1 {
-            /*Changed .1class to .class1, can;t start w/number*/
+            /*Changed .1class to .class1, can't start w/number*/
             padding: 10px;
-            background-color: orange; /*fixed background-color, hyphen and spelling*/
+            background-color: orange;
+            /*fixed background-color, hyphen and spelling*/
         }
     </style>
 </head>
@@ -23,11 +27,11 @@
 
     <form id="form" action="/action_page.php">
         <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
+        <input type="text" id="fname" name="fname" placeholder="John"><br>
         <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <input type="submit" value="Submit">
-        <!--Changed buttton to submit-->
+        <input type="text" id="lname" name="lname" placeholder="Doe"><br><br>
+        <!--Changed from value to placeholder-->
+        <input type="button" value="Submit">
     </form>
 
     <br>

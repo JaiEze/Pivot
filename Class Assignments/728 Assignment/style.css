@@ -1,0 +1,23 @@
+p {
+    border: 8px solid pink;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+a:link {
+    color: green;
+}
+
+a:hover {
+    color: red;
+}
+
+p a:first-child {
+    color: orange;
+}
+
+a:active {
+    color: blue;
+}
+
