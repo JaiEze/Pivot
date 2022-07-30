@@ -1,0 +1,40 @@
+#Pink {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#Pink td, #Pink th {
+    border: 2px solid white;
+    padding: 2px;
+    text-align: center;
+}
+
+#Pink tr:nth-child(even){
+    background-color: cornsilk;
+}
+#Pink tr:hover {
+    background-color: grey;
+}
+#Pink th {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: center;
+    background-color: lightpink;
+    color: black;
+}
+
+#Magenta {
+    background-color: magenta}
+
+    #Coral {
+        background-color: coral}
+
+        #Salmon {
+            background-color: salmon}
+
+            #BabyPink {
+                background-color:pink}
+
+                #HotPink {
+                    background-color: hotpink}
