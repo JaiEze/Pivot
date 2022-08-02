@@ -1,0 +1,41 @@
+table {
+    position: sticky;
+    width: 100%;
+    text-align: left;
+}
+
+th {
+    padding: 40px;
+    background-color: orange;
+}
+
+td {
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: blue;
+    color: white;
+}
+
+td.N50:hover {
+    background-color: orange;
+}
+
+tr:hover {
+    background-color: lightblue;
+}
+
+.fixed {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    height: 350px;
+    width: 200px;
+    background-color: blue;
+    color: white;
+}
+
+.two {
+    visibility: hidden;
+}
