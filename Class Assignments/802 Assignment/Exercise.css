@@ -1,0 +1,30 @@
+.div1,
+.div2,
+.div3 {
+    float: left;
+}
+
+.div2 {
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+    overflow: hidden;
+}
+
+.div3,
+.div6 {
+    clear: both;
+}
+
+.div4 {
+    width: 300px;
+    height: 300px;
+    background-color: goldenrod;
+    overflow: scroll;
+}
+
+.div5,
+.div4,
+.div6 {
+    float: right;
+}

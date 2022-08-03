@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.box-container {
+    float: left;
+    width: 33.33%;
+    padding: 2px;
+}
+
+.box::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#Yeon, #Dion, #Jai {
+    width: 200px;
+    max-height: 100vh;
+}
+
