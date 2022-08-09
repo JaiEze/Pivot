@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .nav {
+            background-color: #3483eb;
+            list-style-type: none;
+            text-align: left; /*Changed to left*/
+            margin: 0;
+            border-radius: 15px;
+            overflow: hidden; /*added, there was a small overflow in right corner*/
+            padding: 2.5px 0; /*Removed "," to make hover flush with left side*/
+            width: 200px; /*added*/
+        }
+
+        .nav li {
+            display: block; /*changed to block, to make vertical*/
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            border-top: 5px solid #3483eb;
+        }
+
+        .nav li a:link {
+            text-decoration: none;
+        }
+
+        .nav li a:link,
+        .nav li a:visited {
+            color: white;
+        }
+
+        .nav li:hover {
+            background-color: #345beb;
+            border-radius: 10px;
+            border-top: 5px solid #5234eb;
+        }
+
+        .nav li:hover a:link,
+        .nav li:hover a:visited {
+            color: white;
+        }
+
+        a[href*="#home"] {
+            background-color: grey;
+        }
+
+        a[href^="#c"] {
+            background-color: orange;
+        }
+
+        a[href*="ts"] {
+            background-color: green;
+        }
+
+        [class~="nav"] {
+            background-color: red;
+        } 
+    </style>
+</head>
+
+<body>
+
+    <h1>Vertical Navigation Links</h1>
+    <p> Transform this horizontal menu into a vertical menu. The menu width needs to be 200px wide and the needs to be
+        left aligned. </p>
+
+
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#clients">Our Clients</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+</body>
+
+</html>
