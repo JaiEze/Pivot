@@ -3,20 +3,38 @@
 
 <head>
     <style>
+        /* .nav {
+  background-color: #3483eb;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  border-radius: 15px;
+  padding: 2.5px, 0;
+ }
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  border-top: 5px solid #3483eb;
+} */
         [class="instructions"] {
             /*spelling*/
             list-style: square;
         }
 
         [class*="menu"] {
+            display: inline-block;
             background-color: #3483eb;
             list-style-type: none;
             text-align: center;
             margin: 0;
-            padding: 0%;
             border-radius: 15px;
+            padding: 2.5px, 0;
         }
-
 
         [class*="first"] {
             background-color: gray;
@@ -52,7 +70,7 @@
     <p>
         Create a style for the table as follows:<br>
     <ul class="instructions">
-        <li>If class equals 'instructions' change list style to square</li>
+        <!-- <li>If class equals 'instructions' change list style to square</li> -->
         <li>If class contains 'menu' apply menu styling (horizontal) from last menu assignment.</li>
         <!-- <li>If class exact matches 'first' set background-color to gray.</li> -->
         <!-- <li>If class ends with 'sixty' set background-color to light-blue.</li> -->
