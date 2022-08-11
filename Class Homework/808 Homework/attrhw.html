@@ -3,31 +3,12 @@
 
 <head>
     <style>
-        /* .nav {
-  background-color: #3483eb;
-  list-style-type: none;
-  text-align: center;
-  margin: 0;
-  border-radius: 15px;
-  padding: 2.5px, 0;
- }
-
-.nav li {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 20px;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  border-top: 5px solid #3483eb;
-} */
         [class="instructions"] {
             /*spelling*/
             list-style: square;
         }
 
         [class*="menu"] {
-            display: inline-flex;
             background-color: #3483eb;
             list-style-type: none;
             text-align: center;
@@ -36,17 +17,37 @@
             padding: 2.5px 0;
         }
 
-        /* /* li[class*="menu"] {
-            display: inline-flex;
+        [class*="menu"] li {
+            display: inline-block;
             font-size: 20px;
             font-weight: bold;
             padding: 20px;
             text-transform: uppercase;
-            font-family: sans-serif; */
+            font-family: sans-serif;
+            border-top: 5px solid #3483eb;
+        }
 
-        } */
+        [class*="menu"] li a:link {
+            text-decoration: none;
+        }
 
-        [class*="first"] {
+        [class*="menu"] li a:link,
+        li a:visited {
+            color: white;
+        }
+
+        [class*="menu"] li:hover {
+            background-color: #345beb;
+            border-radius: 10px;
+            border-top: 5px solid #5234eb;
+        }
+
+        [class*="menu"] li:hover a:link,
+        li:hover a:visited {
+            color: white;
+        }
+
+        [class^="first"] {
             background-color: gray;
         }
 
@@ -63,6 +64,17 @@
             font-weight: bold;
             color: red;
             text-decoration: underline;
+        }
+
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;   
         }
     </style>
 </head>
@@ -83,9 +95,9 @@
         <li>If class equals 'instructions' change list style to square</li>
         <li>If class contains 'menu' apply menu styling (horizontal) from last menu assignment.</li>
         <li>If class exact matches 'first' set background-color to gray.</li>
-        <li>If class ends with 'sixty' set background-color to light-blue.</li> 
+        <li>If class ends with 'sixty' set background-color to light-blue.</li>
         <li>If class contains '-const' set color to green.</li>
-        <li>If class starts with 'last' set font to bold, color to red and underline text</li> 
+        <li>If class starts with 'last' set font to bold, color to red and underline text</li>
     </ul>
 
     </p>
