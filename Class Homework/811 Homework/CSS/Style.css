@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #E0A387;
+    font-family: helvetica, sans-serif;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    background-image: linear-gradient(#310A0B, #743A36,#B96A59);
+    text-decoration: wavy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 40px;
+}
+
+h4 {
+    text-align: center;
+}
+
+
+/* Nav Bar */
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #B96A59;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    /*Center*/
+}
+
+li a {
+    display: inline-block;
+    /*Center*/
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #310A0B;
+    border-radius: 20%;
+}
+
+.main p {
+    border: 2px solid white;
+    float: center;
+}
+
+/*Content*/
+.C {
+    float: left;
+    padding: 10px;
+}
+
+.LSide,
+.RSide {
+    width: 25%;
+    overflow: hidden;
+}
+
+.Middle {
+    width: 50%;
+}
+
+#Row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Images On Team Page*/
+
+.M-Images, .D-Images, .K-Images, .Y-Images {
+    float: left;
+    margin: 20px;
+    position: relative;
+    width: 50%;
+}
+
+.image, .image2. .image3, .image4 {
+    opacity: 1;
+    display: block;
+    width: 75%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.Button {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.Button2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.Button3 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.Button4 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.M-Images:hover .image, .D-Images:hover .image2, .K-Images:hover .image3, .Y-Images:hover .image4 {   /*Makes the image opacity when hovered*/
+    opacity: 0.3;
+}
+
+.M-Images:hover .Button, .D-Images:hover .Button2, .K-Images:hover .Button3, .Y-Images:hover .Button4 {   /*Keep Icon Bold when hovered on*/
+    opacity: 1;
+}
+
+/*Contact Page*/
+h2, h5 {
+    text-align: center;
+    font-size: 50px;
+    ;
+}
+.Contact img {
+    border-radius: 50%;
+    float: left;
+    padding: 35px;
+    margin: 0 0 0 140px;
+}
+
+.Icons {
+    column-count: 4;
+    position: absolute;
+    border
+    top: 850px;
+}
+
+.Form {
+    
+
+/*Footer*/
+
+#footer {
+    width: 100%;
+    height: 50px;
+    background-color: #310A0B;
+    z-index: 10;
+    margin-top: 1000px;
+    position: relative;
+    clear: both;
+    color: white;
+    text-align: center;
+   
+}
