@@ -7,21 +7,19 @@ html {
 }
 
 body {
-    background-color: #E0A387;
+    /* background-color: #E0A387; */
     font-family: helvetica, sans-serif;
     padding: 0;
     height: 100%;
     margin: 0;
 }
 
-header {
-    background-image: linear-gradient(#310A0B, #743A36,#B96A59);
-    text-decoration: wavy;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-    font-size: 40px;
+header ul {
+    border: 3px solid black;
+    color: black;
+    padding: 0, 0, 0, 22px;
+    text-align: right;
+    font-size: 13.328px;
 }
 
 h4 {
@@ -30,16 +28,24 @@ h4 {
 
 
 /* Nav Bar */
+
+.navbar {
+    position: sticky;
+    top: 0%;
+}
+
+.nav {
+    z-index: 1;
+}
+
 ul {
+    border: 3px solid blue;
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    background-color: #B96A59;
-    position: sticky;
-    top: 0;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 li {
@@ -50,15 +56,16 @@ li {
 li a {
     display: inline-block;
     /*Center*/
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 25px;
-    padding: 10px 20px;
+    padding: 0 30px 0 70px;
     text-decoration: none;
+    z-index: 1;
 }
 
 li a:hover {
-    background-color: #310A0B;
+    background-color: grey;
     border-radius: 20%;
 }
 
@@ -76,7 +83,7 @@ li a:hover {
 .LSide,
 .RSide {
     width: 25%;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .Middle {
@@ -98,7 +105,7 @@ li a:hover {
     width: 50%;
 }
 
-.image, .image2. .image3, .image4 {
+/* .image, .image2. .image3, .image4 {
     opacity: 1;
     display: block;
     width: 75%;
@@ -148,15 +155,15 @@ li a:hover {
 }
 
 .M-Images:hover .image, .D-Images:hover .image2, .K-Images:hover .image3, .Y-Images:hover .image4 {   /*Makes the image opacity when hovered*/
-    opacity: 0.3;
-}
+    /* opacity: 0.3;
+} */
 
-.M-Images:hover .Button, .D-Images:hover .Button2, .K-Images:hover .Button3, .Y-Images:hover .Button4 {   /*Keep Icon Bold when hovered on*/
-    opacity: 1;
-}
+/* .M-Images:hover .Button, .D-Images:hover .Button2, .K-Images:hover .Button3, .Y-Images:hover .Button4 {   /*Keep Icon Bold when hovered on*/
+    /* opacity: 1;
+} */ 
 
 /*Contact Page*/
-h2, h5 {
+/* h2, h5 {
     text-align: center;
     font-size: 50px;
     ;
@@ -173,22 +180,23 @@ h2, h5 {
     position: absolute;
     border
     top: 850px;
-}
+} */
 
-.Form {
-    
+/* .Form {
+    text-align: center;
+}    */
 
 /*Footer*/
 
 #footer {
     width: 100%;
     height: 50px;
-    background-color: #310A0B;
+    border: 3px solid black;
     z-index: 10;
     margin-top: 1000px;
     position: relative;
     clear: both;
-    color: white;
+    color: black;
     text-align: center;
    
 }
