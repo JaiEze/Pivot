@@ -1,202 +1,117 @@
 * {
     box-sizing: border-box;
-}
-
-html {
-    height: 100%;
-}
-
-body {
-    /* background-color: #E0A387; */
-    font-family: helvetica, sans-serif;
-    padding: 0;
-    height: 100%;
+    font-family: Helvetica, sans-serif;
     margin: 0;
 }
 
-header ul {
-    border: 3px solid black;
-    color: black;
-    padding: 0, 0, 0, 22px;
-    text-align: right;
-    font-size: 13.328px;
+/*Header Nav*/
+
+.Header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(243, 243, 243);
+    border-bottom-color: rgb(230, 230, 230);
+    height: 40px;
+    padding: 0 16px 0 16px;
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
 }
 
-h4 {
-    text-align: center;
+.Header li {
+    list-style-type: none;
+    padding: 10px;
+    align-items: center;
+    white-space: nowrap;
 }
 
+.Header:hover a {
+    cursor: pointer;
+}
 
 /* Nav Bar */
 
 .navbar {
     position: sticky;
-    top: 0%;
+    top: 0;
 }
 
-.nav {
-    z-index: 1;
-}
-
-ul {
-    border: 3px solid blue;
+.navbar ul {
+    background-color: white;
     list-style-type: none;
-    margin: 0 auto;
+    display: flex;
+    margin: 0;
     padding: 0;
-    overflow: hidden;
-    width: 100%;
-    text-align: left;
-}
-
-li {
-    display: inline;
-    /*Center*/
-}
-
-li a {
-    display: inline-block;
-    /*Center*/
-    color: black;
-    font-weight: bold;
-    font-size: 25px;
-    padding: 0 30px 0 70px;
-    text-decoration: none;
+    align-items: center;
+    width: 1871px;
+    height: 64px;
+    /* overflow: hidden; */
     z-index: 1;
 }
 
-li a:hover {
-    background-color: grey;
-    border-radius: 20%;
+.navbar ul li {
+    padding: 0 8px 0 8px;
+    margin: auto 0 auto 0;
 }
 
-.main p {
-    border: 2px solid white;
-    float: center;
-}
-
-/*Content*/
-.C {
+nav img {
+    width: 30px;
     float: left;
-    padding: 10px;
+    margin: 32px;
+    padding: 5px 0;
 }
 
-.LSide,
-.RSide {
-    width: 25%;
-    overflow: scroll;
+/*Image Wrapper*/
+
+
+.Wrapper-Img {
+    /* display: flex; */
+    position: relative;
+    align-items: center;
+    width: 80%;
+    margin: auto;
 }
 
-.Middle {
-    width: 50%;
+.cyber-img {
+    display: block;
+    margin: auto;
+    width: 100%;
 }
 
-#Row::after {
-    content: "";
-    display: table;
-    clear: both;
+.Wrapper-text {
+    background-color: #fff;
+    position: absolute;
+    display: inline-block;
+    padding: 60px;
+    border: 2px solid #e6e6e6;
+    border-radius: 4px;
+    bottom: 20%;
+    left: 5%;
+    text-align: left;
 }
 
 /*Images On Team Page*/
 
-.M-Images, .D-Images, .K-Images, .Y-Images {
+.M-Images,
+.D-Images,
+.K-Images,
+.Y-Images {
     float: left;
     margin: 20px;
     position: relative;
     width: 50%;
 }
-
-/* .image, .image2. .image3, .image4 {
-    opacity: 1;
-    display: block;
-    width: 75%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.Button {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 35%;
-    left: 16%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-}
-
-.Button2 {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 35%;
-    left: 16%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-}
-
-.Button3 {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 35%;
-    left: 16%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-}
-
-.Button4 {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 35%;
-    left: 16%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-}
-
-.M-Images:hover .image, .D-Images:hover .image2, .K-Images:hover .image3, .Y-Images:hover .image4 {   /*Makes the image opacity when hovered*/
-    /* opacity: 0.3;
-} */
-
-/* .M-Images:hover .Button, .D-Images:hover .Button2, .K-Images:hover .Button3, .Y-Images:hover .Button4 {   /*Keep Icon Bold when hovered on*/
-    /* opacity: 1;
-} */ 
-
-/*Contact Page*/
-/* h2, h5 {
-    text-align: center;
-    font-size: 50px;
-    ;
-}
-.Contact img {
-    border-radius: 50%;
-    float: left;
-    padding: 35px;
-    margin: 0 0 0 140px;
-}
-
-.Icons {
-    column-count: 4;
-    position: absolute;
-    border
-    top: 850px;
-} */
-
-/* .Form {
-    text-align: center;
-}    */
-
 /*Footer*/
 
 #footer {
     width: 100%;
     height: 50px;
     border: 3px solid black;
-    z-index: 10;
-    margin-top: 1000px;
-    position: relative;
-    clear: both;
+    /* z-index: 10; */
+    /* margin-top: 1000px; */
+    position: absolute;
+    /* clear: both; */
     color: black;
     text-align: center;
-   
 }
