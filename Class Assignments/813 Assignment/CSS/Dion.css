@@ -1,0 +1,26 @@
+/*
+*****************************
+* =team page
+*****************************
+*/
+
+
+.team-img {
+  width: 15%;
+  border-radius: 100%;
+  float:left;
+  margin-right: 2%;
+}
+
+.team {
+  width: 80%;
+  margin: auto;
+}
+
+.team-row {
+  width: inherit;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+
+}

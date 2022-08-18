@@ -1,66 +1,141 @@
 * {
     box-sizing: border-box;
+}
+
+body {
     font-family: Helvetica, sans-serif;
     margin: 0;
 }
 
-/*Header Nav*/
+/*~~~~~~~~~~~~~~~~Header Nav~~~~~~~~~~~~~~~~~~~~*/
 
-.Header {
-    display: flex;
-    justify-content: flex-end;
+.Head {
     background-color: rgb(243, 243, 243);
     border-bottom-color: rgb(230, 230, 230);
-    height: 40px;
-    padding: 0 16px 0 16px;
-    font-size: 16px;
-    width: 100%;
-    margin: 0;
-    z-index: 1;
 }
 
-.Header li {
-    list-style-type: none;
-    padding: 10px;
+.Head-Wrapper {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    white-space: nowrap;
+    padding: auto 30px auto 70px;
 }
 
-.Header:hover a {
+.Nav-2 {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 0;
+}
+
+.Nav-2 li {
+    margin: 0 8px;
+    line-height: 19.2px;
+}
+
+.Nav-2 li a {
+    font-size: 13.328px;
+    text-decoration: none;
+    color: #1d2f28;
+}
+
+.Nav-2 li a:hover {
+    text-decoration: underline;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~Nav Bar~~~~~~~~~~~~~~~~~~~~~~*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 64px;
+    margin-left: 10px;
+}
+
+.Logo {
+    width: 30px;
+    margin-left: 32px;
+    /* padding-bottom: 5px; */
+}
+
+.Links {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.Links li {
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    position: relative;
+}
+
+.Links li a {
+    text-decoration: none;
+    color: #1d2f28;
+}
+
+/*~~~~~~~~~~~~~~~~~~~Drop Down~~~~~~~~~~~~~~~~~*/
+
+.navbar .Links li ul {
+    padding: 2px;
+    background-color: #fff;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    white-space: nowrap;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px #cccccc7a;
+    min-width: 144px;
+    display: none;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.navbar .Links li:focus-within>ul,
+.navbar .Links li:hover>ul {
+    display: block;
+}
+
+.navbar .Links li ul li {
+    font-size: 16px;
+    line-height: 19.2px;
+    padding: 8px;
+    margin: 2px;
+}
+
+.navbar .Links li ul a {
+    margin: 2px;
+}
+
+.navbar .Links li ul li:hover {
+    background-color: #eaf3e7;
+    border-radius: 4px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~Drop Down After~~~~~~~~~~~~~~~~~~~~~*/
+
+.carat {
+    display: inline-block;
+}
+
+.Links li:hover .carat-svg {
+    transform: rotate(180deg);
     cursor: pointer;
 }
 
-/* Nav Bar */
-
-.navbar {
-    position: sticky;
-    top: 0;
+.Links li:hover>a {
+    color: #2d810e;
 }
 
-.navbar ul {
-    background-color: white;
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    width: 1871px;
-    height: 64px;
-    /* overflow: hidden; */
-    z-index: 1;
-}
-
-.navbar ul li {
-    padding: 0 8px 0 8px;
-    margin: auto 0 auto 0;
-}
-
-nav img {
-    width: 30px;
-    float: left;
-    margin: 32px;
-    padding: 5px 0;
-}
 
 /*Image Wrapper*/
 
@@ -86,32 +161,53 @@ nav img {
     padding: 60px;
     border: 2px solid #e6e6e6;
     border-radius: 4px;
-    bottom: 20%;
-    left: 5%;
+    bottom: 102.65px;
+    left: 70px;
     text-align: left;
 }
 
-/*Images On Team Page*/
-
-.M-Images,
-.D-Images,
-.K-Images,
-.Y-Images {
-    float: left;
-    margin: 20px;
-    position: relative;
-    width: 50%;
+.Wrapper-text h3 {
+    font-size: 47.776px;
+    line-height: 53.75px;
 }
+
+.Wrapper-text h5 {
+    font-size: 19.2px;
+    margin-top: 15px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~Images On Team Page~~~~~~~~~~~~~~~~~~~~~*/
+
+.team-header {
+    text-align: center;
+}
+
+.team-img {
+    width: 15%;
+    border-radius: 100%;
+    float: left;
+    margin-right: 2%;
+}
+
+.team {
+    width: 80%;
+    margin: auto;
+}
+
+.team-row {
+    width: inherit;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+
 /*Footer*/
 
 #footer {
-    width: 100%;
-    height: 50px;
-    border: 3px solid black;
-    /* z-index: 10; */
-    /* margin-top: 1000px; */
-    position: absolute;
-    /* clear: both; */
-    color: black;
     text-align: center;
+    padding: 20px;
+    background-color: rgb(120, 120, 120);
+    border-color: rgb(29, 47, 40);
+    margin-top: 160px;
+
 }
