@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<script>
+    const one = 1; // Once this is set it won't change. 
+
+    function anotherFunction(){
+        thirdFunction();
+        one = 20;
+        
+    }
+
+    function setElementValue() {
+
+        let five = '10';
+
+        if(five === '10'){ // Two equal signs, trys to make them the same type and then compares. Three equal signs is used for testing, but is less forgiving. If is is not it won't run.
+
+            one= "Chris"; // conditional comparsion, it allows you to perform action basedon the output of the condition.  
+        }
+        // anotherFunction(); //this function within function will log twenty because it automatically take the value from the another function 
+        console.log(one);
+    }
+
+    function thirdFunction() {
+        one='Chris'
+        console.log(one);
+    }
+    //If you click the sert element button, it will display 1. If you then click another function, it will set the value to 20. Then if you hit setelement again it will display the 20. Repeat with third function. 
+    
+</script>
+</head>
+<body>
+    <button onclick="setElementValue()">Set Element</button>
+    <!-- <button onclick="anotherFunction()">Another function</button>
+    <button onclick="thirdFunction()">Third Function</button> -->
+</body>
+</html>
+
