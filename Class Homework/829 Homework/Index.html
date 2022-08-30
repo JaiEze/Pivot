@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Create a javascript function
+Create a div in you html body
+Create a button in your HTML body
+set the 'onclick' event of the button to the function
+Set a var for kilometers and set it to 10
+convert the kilometers to miles;
+set the value of the div you created in the second bullet above to the miles from conversion. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+
+<body>
+
+    Kilometers: <input type="text" id="KM">
+    <br>
+    <button onclick="Calmiles()">Convert</button>
+    <div id="Output"></div>
+
+    <script>
+        function Calmiles() {
+            var kilos = 10
+            var miles = kilos * 6.21;
+            document.getElementById("Output").innerHTML = Miles;
+        }
+    </script>
+</body>
+
+</html>
