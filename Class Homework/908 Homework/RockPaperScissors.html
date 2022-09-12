@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Create an array that contains the variables Rock, Paper, and Scissors.
+2. Set up a variable that generates a random number 0-2 for the player and then 
+do the same for the computer's selection. The number represents the index 
+values in the array of the 3 items.
+3. Create a variable to hold a response message to the user. This can show the 
+random results for the player and then also the result for the computer of the 
+matching item from the array. 
+4. Create a condition to handle the player and computer selections. If both are 
+the same, this results in a tie. 
+5. Use conditions to apply the game logic and return the correct results. 
+There are several ways to do this with the condition statements, but you 
+could check which player's index value is bigger and assign the victory 
+accordingly, with the exception of Rock beating Scissors.
+6. Add a new output message that shows the player selection versus the 
+computer selection and the result of the game. -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Script>
+
+        const myArr = ["Rock", "Paper", "Scissors"];
+        let computer = Math.floor(Math.random() * 3);
+        let player = Math.floor(Math.random() * 3);
+        let message = "player " + myArr[player] + " vs computer " +
+            myArr[computer] + " ";
+        if (player === computer) {
+            message += "it's a tie";
+        } else if (player > computer) {
+            if (computer == 0 && player == 2) {
+                message += "Computer Wins";
+            } else {
+                message += "Player Wins";
+            }
+        } else {
+            if (computer == 2 && player == 0) {
+                message += "Player Wins";
+            } else {
+                Appendix
+                [436]
+                message += "Computer Wins";
+            }
+        }
+        console.log(message);
+
+       const rpsGame = ["Rock", "Paper", "Scissors"];
+        let player = Math.floor(Math.random() * 3);
+        let computer = Math.floor(Math.random() * 3);
+        let message = "player" + rpsGame[player] + "computer" + rpsGame[computer] + " ";
+
+        
+        return Math.floor(Math.random() * 10);
+        }
+        console.log(randomWholeNum());
+    </Script>
+
+</body>
+
+</html>
