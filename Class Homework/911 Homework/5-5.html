@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         let grid = [];
@@ -13,7 +15,7 @@
         let counter = 0;
         let row;
         for (let x= 0; x < cells + 1; x++) {
-            if (counter % 8 == 0) {
+            if (counter % 8 === 0) {
                 if (row !=undefined) {
                     grid.push(row);
                 }
@@ -24,6 +26,30 @@
             row.push(temp);
         }
         console.table(grid);
+
+        // let gridArray = [];
+        // let numOfCells = 64;
+        // let counter = 0;
+        // let row;
+
+        // for (let i = 0; i < numOfCells + 1; i++) {
+        //     if (counter % 8 === 0) {
+        //         if (row != undefined) {
+        //             gridArray.push(row);
+        //         }
+        //         row = [];
+        //     }
+        //     counter++;
+        //     let counterValue = counter;
+        //     row.push(counterValue);
+        //     if (counter = 8) {
+        //         gridArray.push(row);
+        //     }
+        // }
+        // console.table(gridArray);
+
+
     </script>
 </body>
+
 </html>
