@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/LP.css">
+    <script src="https://kit.fontawesome.com/41e14650f7.js" crossorigin="anonymous"></script>
+    <title>Pivot</title>
+</head>
+
+<body>
+    <header><img src="../Images/PivotSign1.png" class="logo"></a>
+        <div class="rightSide">
+            <div class="button dNight">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-sun"></i>
+            </div>
+            <div class="button menuToogle">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <video src="../Images/AXZNE8645.MOV" autoplay loop muted type="MOV"></video>
+        <img src="../Images/mask.png" class="mask">
+        <p class="copyright"><i class="fa fa-copyright">Jai Eze Collab W/ Pivot Tech</i></p>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/pivottechschool" target="_blank"<i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/pivottechschool/" target="_blank"<i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/@pivottechschool?is_from_webapp=1&sender_device=pc" target="_blank"<i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/pivot-technology-school/" target="_blank"<i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/pivottechschool?lang=en" target="_blank"<i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCbN1gwTOznKYMoLyR-TB8Ag/videos" target="_blank"<i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+    </section>
+    <ul class="navigation">
+        <li><a href="../HTML/LandingPage.html">Home</a></li>
+        <li><a href="../HTML/Current.html">Current</a></li>
+        <li><a href="../HTML/Graduates.html">Graduates</a></li>
+        <li><a href="../HTML/Alumni.html">Alumni</a></li>
+        <li><a href="../HTML/Capstones.html">Capstones</a></li>
+        <li><a href="../HTML/Reviews.html">Reviews</a></li>
+    </ul>
+    <script>
+        let dNight = document.querySelector('.dNight')
+        let menuToogle = document.querySelector('.menuToogle')
+        let body = document.querySelector('body')
+        let navigation = document.querySelector('.navigation')
+        dNight.onclick = function(){
+            body.classList.toggle('dark')
+            dNight.classList.toggle('active')
+        }
+
+        menuToogle.onclick = function(){
+            menuToogle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>

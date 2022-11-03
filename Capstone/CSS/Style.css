@@ -1,0 +1,148 @@
+  /*Navigation Section*/
+
+  .head{
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;
+    overflow: hidden;
+    background-color: #E9967A;
+  }
+  
+  li {
+    float: center;
+  }
+  
+  li a {
+    display: inline-flex;
+    color: white;
+    text-align: center;
+    padding: 3px 5px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: rgb(73, 71, 71);
+  }
+
+  .center {
+    text-align: center;
+    border: 3px solid rgb(255, 255, 255);
+  }
+
+  /* Images side by side*/
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .column {
+    flex: 40%;
+    margin: 10px;
+    padding: 5px;
+  }
+
+  /* Index Paragraphs*/
+
+  div.a {
+    margin: auto;
+    width: 80%; 
+    border: 3px solid #000000;
+  }
+
+  div.a {
+    word-wrap: break-word;
+  }
+  
+  /*Main Description List*/
+  dl {
+    display: flex;
+    flex-flow: row wrap;
+    border: solid #333;
+    border-width: 1px 1px 0 0;
+  }
+  dt {
+    flex-basis: 20;
+    padding: 1px 2px;
+    background: #333;
+    text-align: right;
+    color: #fff;
+  }
+  dd {
+    flex-basis: 10%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 1px 2px;
+    border-bottom: 1px solid #333;
+  }
+
+  /*Forms*/
+
+  input[type=text], select {
+    width: 30%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+
+  div.form {
+    border-radius: 5px;
+    background-color: #ece1e1;
+    padding: 10px;
+  }
+
+/*Resume Columns*/
+* {
+  box-sizing: border-box;
+}
+
+div.Col {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+div.R :after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Misc Table*/
+
+table {
+  font-family: arial, sans-serif;
+    border-radius: 5px;
+    width: 100%;
+    }
+    
+    th, td {
+    border:3px solid black;
+    text-align:center;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #f7cdc0;
+    }
+
+  /*Footer*/
+
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #E9967A;
+    color: white;
+  }

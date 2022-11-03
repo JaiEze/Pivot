@@ -1,0 +1,65 @@
+.navigation {
+    margin: auto;
+    bottom: 30px;
+    width: 400px;
+    height: 70px;
+    background: darkblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* Navigation Bar */
+.navigation ul {
+    display: flex;
+    width: 350px;  
+    padding: 0;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon  {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    line-height: 45px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: whitesmoke;
+    text-decoration: none;
+}
+i {
+    color: lightgray;
+    transition: 1s;
+    padding: 0 5px;
+    user-select: none;
+    cursor: default;
+
+}
+
+i:hover {
+    transition: 0s;
+    color: rgb(247, 166, 5);
+    text-shadow: 0 0 120px rgb(247, 166, 5);
+}
